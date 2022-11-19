@@ -1,33 +1,23 @@
-# rabbit-platform-service
+# node-feperf-monitor-server
 
-知问兔平台服务层
+Feperf provides a simple front-end performance monitor for websites.
 
-## QuickStart
+There are two parts to the project. One of them is the back-end service to collect the data; Another part is the JavaScript SDK for websites to report the performance data.
 
-<!-- add docs here for user -->
+## Deploy
 
-see [egg docs][egg] for more detail.
+The project is deployed by Docker but only on one server. The CI will be running when building the image.
 
-### Development
+Use the lock file in the Node project. 
 
-```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
+```
+ADD package.json /www
+ADD package-lock.json /www
+RUN npm ci
 ```
 
-### Deploy
+The command line should be running in the beginning of a container.
 
-```bash
-$ npm start
-$ npm stop
 ```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
+# npm ci;
+```

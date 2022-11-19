@@ -11,7 +11,7 @@ WORKDIR /www
 # 利用缓存
 ADD package.json /www
 ADD package-lock.json /www
-# RUN npm ci
+RUN npm ci
 
 COPY . /www
 

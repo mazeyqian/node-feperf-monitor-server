@@ -1,5 +1,5 @@
 {
-  "name": "feperf-server",
+  "name": "node-feperf-monitor-server",
   "version": "1.0.0",
   "description": "Fepperf server.",
   "private": true,
@@ -40,7 +40,6 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "ins:cnpm": "install cnpm@8.4.0",
     "_start-other-params": "local --daemon --title",
     "start-local": "egg-scripts start --env=local --title=egg-server-local-feperf-server --port=7414",
     "start-prod": "egg-scripts start --env=prod --title=egg-server-prod-feperf-server --port=7414",

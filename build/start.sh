@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 启动 node 服务
-npm ci;
+# npm ci;
 npm run start-prod;
 
 # node -v;
